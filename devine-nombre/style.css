@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    font-family: 'Cabin', sans-serif;
+}
+
+header{
+    margin: auto;
+    height: 100px;
+    width: 60%;
+    background-color: #617261;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 35px;
+}
+
+main {
+    margin: auto;
+    height: 900px;
+    width: 60%;
+    background-color: khaki;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.butJeu {
+    font-size: 30px;
+    color: #34495E;
+}
+
+#smiley {
+    width: 400px;
+}
+
+#donner {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nombre {
+    color: #34495E ;
+    font-size: 35px;
+}
+
+#input1 {
+    margin-top: 20px;
+}
+
+#entrer {
+    margin-top: 10px;
+}
+
+ul {
+    border: 1px dashed orangered;
+    padding: 30px;
+    width: 20%;
+    margin-top: 20px;
+    background-color: lightgrey;
+}
+
+@media screen and (max-width: 900px) {
+    header, main {
+        width: 100%;
+        padding: 0;
+    }
+
+    main {
+        padding-top: 30px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .butJeu, .nombre {
+        font-size: 15px;
+    }
+
+    header {
+        font-size: 10px;
+    }
+
+    #donner {
+        margin-top: 50px;
+    }
+
+    #input1 {
+        width: 70px;
+    }
+
+    #smiley {
+        width: 200px;
+    }
+}

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    font-family: 'Langar', cursive;
+}
+
+.container {
+    width: 40%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#game-area {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.case {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+    width: 33%;
+    height: 15rem;
+    border: 1px solid black;
+}
+
+#won {
+    border: 1px dotted mediumseagreen;
+    width: 20%;
+    margin: 20px auto;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+button {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: auto;
+}

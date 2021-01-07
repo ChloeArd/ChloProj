@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    background-color: #597EAA;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+#container {
+    width: 70%;
+    height: 700px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+#players {
+    display: flex;
+    flex-direction: row;
+}
+
+#player {
+    margin-right: 250px;
+}
+
+p {
+    font-size: 25px;
+}
+
+h1, #players, h2 {
+    margin-bottom: 30px;
+}
+
+img {
+    margin-left: 20px;
+    width: 200px;
+}
+
+#button {
+    display: inline-block;
+}
+
+#feuille, #pierre{
+    margin-right: 120px;
+}
+
+button {
+    background-color: gold;
+    border-radius: 10px;
+    width: 80px;
+    height: 40px;
+}
+
+@media screen and (max-width: 953px) {
+    #container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    img {
+        width: 120px;
+    }
+    #feuille, #pierre {
+        margin-right: 70px;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    #player {
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    h1{
+        font-size: 40px;
+    }
+    h1, #players, h2 {
+        margin-bottom: 50px;
+    }
+    img{
+        width: 90px;
+    }
+    #feuille, #pierre {
+        margin-right: 40px;
+    }
+    button{
+        height: 60px;
+    }
+}
