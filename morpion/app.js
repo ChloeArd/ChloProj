@@ -10,12 +10,12 @@ for(const square of cases) {
         switch(event.button) {
             case CLICK_LEFT:
                 //Une fois que le X sera dans le div, on ne pourra plus rien ajouter dans ce div.
-                insertPlayerText(this, "X")
+                insertPlayerText(this, "X","red")
                 break;
 
             case CLICK_RIGHT:
                 //Une fois que le O sera dans le div, on ne pourra plus rien ajouter dans ce div.
-                insertPlayerText(this, "O")
+                insertPlayerText(this, "O","blue")
                 break;
         }
 
@@ -83,12 +83,13 @@ function checkDiagonal(player) {
 }
 
 //Insère une lettre dans le div .case
-function insertPlayerText(element, playerChar) {
+function insertPlayerText(element, playerChar, color) {
     //Element contient l'élément a qui on va donner la lettre contenue dans playerChar.
     if (!playerX && !playerO) {
         if (element.innerHTML.length === 0) {
             //PlayerChar contient la lettre à insérer, X ou O
             element.innerHTML = playerChar; //Contient l'objet qui a généré l'évènement (l'objet sur lequel on a clic)
+            element.style.color = color;
         }
     }
 }
