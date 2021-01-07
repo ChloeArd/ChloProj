@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    font-family: 'Source Serif Pro', serif;
+}
+
+#horloge{
+    width: 400px;
+    height: 100%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#imgHorloge{
+    width: 400px;
+    height: 400px;
+    box-shadow: 10px 10px 30px darkgrey;
+}
+
+#taille{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    position: absolute;
+}
+
+#heures, #minutes, #secondes {
+    position: absolute;
+    bottom: 50%;
+    transform-origin: bottom;
+}
+
+#heures{
+    border-right: 6px solid black;
+    height: 100px;
+    border-radius: 0 50% 0 50%;
+}
+
+#minutes{
+    border-right: 7px solid black;
+    height: 150px;
+    border-radius: 0 50% 0 50%;
+    transition: transform 0.3s cubic-bezier(.4,2.08,.55,.44);
+}
+
+#secondes{
+    border-right: 4px solid red;
+    height: 70px;
+    border-radius: 0 50% 0 50%;
+    transition: transform 0.2s cubic-bezier(.4,2.08,.55,.44);
+}
+
+#time, #date{
+    text-align: center;
+    font-size: 30px;
+}
