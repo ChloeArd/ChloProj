@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Animaux</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="container">
+        <h1>Quiz Animaux</h1>
+        <div id="question">
+            <p id="resultFinal">Ton score est de : <span id="score"></span> / 10</p>
+            <div id="answerAll"></div>
+            <div id="question2">
+                <h2>Question <span id="numero">0</span> :</h2>
+                <p id="questions"></p>
+                <div id="container2">
+                    <div id="answer">
+                        <div>
+                            <input id="choice1" type="radio" name="choices">
+                            <label id="labelChoice1"></label>
+                        </div>
+                        <div>
+                            <input id="choice2" type="radio" name="choices">
+                            <label id="labelChoice2"></label>
+                        </div>
+                        <div>
+                            <input id="choice3" type="radio" name="choices">
+                            <label id="labelChoice3"></label>
+                        </div>
+                        <div>
+                            <input id="choice4" type="radio" name="choices">
+                            <label id="labelChoice4"></label>
+                        </div>
+                    </div>
+                    <div id="image">
+                        <img src="" id="imageQuestion">
+                    </div>
+                </div>
+                <div id="divEnter">
+                    <button id="enterNext">Entrer</button>
+                    <button id="result">Résultat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

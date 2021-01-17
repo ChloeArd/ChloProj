@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url("https://cdn.futura-sciences.com/buildsv6/images/mediumoriginal/e/1/9/e191c0568e_nodam_78-1024x768-0ec19.jpg");
+    width: 100%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+#container{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 70px;
+}
+
+#question{
+    margin-top: 40px;
+    width: 70%;
+    align-items: normal;
+    color: white;
+    font-size: 30px;
+    background-color: #E5CFAC;
+    box-shadow: 5px 5px 5px #B5A68F;
+    padding: 20px;
+}
+h2, #final{
+    color: #937951;
+}
+h2, #questions, #final{
+    margin-bottom: 15px;
+}
+
+input{
+    margin-bottom: 25px;
+}
+
+#divEnter{
+    display: flex;
+    align-items: normal;
+    justify-content: center;
+}
+
+#enterNext, #result{
+    display: block;
+    background-color: #937951;
+    color: white;
+    font-size: 30px;
+    border-radius: 10px 10px;
+    margin-top: 30px;
+}
+
+#container2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#answer, #image{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#imageQuestion{
+    width: 300px;
+}
+
+#result{
+    display: none;
+}
+
+#resultFinal{
+    font-size: 30px;
+    color: #937951;
+    display: none;
+    margin-bottom: 30px;
+}
+
+#answerAll{
+    display: none;
+}
+
+@media screen and (max-width: 1250px) {
+    #container{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #imageQuestion{
+        width: 200px;
+    }
+    #question{
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #image{
+        display: none;
+    }
+    label{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 50px;
+    }
+}
