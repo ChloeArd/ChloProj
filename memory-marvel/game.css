@@ -12,11 +12,16 @@ html {
 body {
     width: 100%;
     font-family: 'Changa', sans-serif;
-    background-color: #ED3535;
+    background-image: url("https://images8.alphacoders.com/618/thumb-1920-618716.jpg");
+    background-size: 100%;
 }
 
 h1{
     font-size: 50px;
+}
+
+h1, h2{
+    color: white;
 }
 
 #container{
@@ -27,25 +32,79 @@ h1{
     align-items: center;
 }
 
-#avengers{
-    width: 100%;
-    margin-top: 15px;
-    margin-bottom: 15px;
+#game{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-#play{
-    background-color: royalblue;
-    font-size: 30px;
+.case{
+    width: 125px;
+    height: 175px;
     border: 1px solid darkslategrey;
-    border-radius: 20px 20px;
+    background-image: url("https://cdn.discordapp.com/attachments/689017273050202134/801762456074321950/Capture3154.PNG");
+    background-size: 120px 170px;
     box-shadow: 5px 5px 5px darkred;
-    text-decoration: none;
-    color: black;
+    margin: 10px;
+    display: flex;
+    border-radius: 10px 10px;
+}
+
+.case:hover{
+    box-shadow: 5px 5px 5px white;
+}
+
+img{
+    width: 100%;
+    border-radius: 10px 10px;
+    display: none;
+}
+
+p{
+    display: none;
+    font-size: 90px;
+    text-align: center;
+    margin: auto;
+}
+
+#window{
+    margin-top: 20px;
+    border: 1px solid black;
+    background: darkgrey;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    box-shadow: 5px 5px 5px darkred;
+    display: none;
+}
+
+#endGame{
+    font-size: 50px;
+    color: #FBAF0C;
+    margin-bottom: 20px;
+}
+
+#scoreGame {
+    font-size: 35px;
+    background-color: white;
+    border-radius: 5px 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#replay{
+    background-color: royalblue;
+    color: white;
+    box-shadow: 5px 5px 5px darkslategrey;
+    border-radius: 20px 20px;
+    font-size: 40px;
+    margin-top: 100px;
 }
 
 @media screen and (max-width: 800px) {
     #container{
-        width: 100%;
+        width: 80%;
     }
     h1{
         font-size: 60px;
@@ -53,13 +112,9 @@ h1{
     h2{
         font-size: 40px;
     }
-    #avengers{
-        margin-top: 30px;
-        margin-bottom: 50px;
-    }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 600px) {
 
     h1{
         font-size: 40px;
@@ -67,9 +122,16 @@ h1{
     h2{
         font-size: 20px;
     }
-    #avengers{
-        margin-top: 50px;
-        margin-bottom: 120px;
+    .case{
+        width: 75px;
+        height: 125px;
+        background-size: 70px 120px;
+    }
+    #endGame{
+        font-size: 30px;
     }
 
+    #scoreGame {
+        font-size: 20px;
+    }
 }
