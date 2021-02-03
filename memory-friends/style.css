@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    font-family: 'Changa', sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1498940757830-82f7813bf178?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80");
+    background-size: 100%;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h1, h2{
+    color: white;
+}
+
+#container{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.case{
+    width: 125px;
+    height: 175px;
+    border: 1px solid darkslategrey;
+    background-image: url("https://images.unsplash.com/photo-1469598614039-ccfeb0a21111?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8ZnVubnl8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-size: 120px 170px;
+    box-shadow: 5px 5px 5px darkgreen;
+    margin: 10px;
+    display: flex;
+    border-radius: 10px 10px;
+}
+
+.case:hover{
+    box-shadow: 5px 5px 5px white;
+}
+
+img{
+    width: 100%;
+    border-radius: 10px 10px;
+    display: none;
+}
+
+p{
+    display: none;
+    font-size: 90px;
+    text-align: center;
+    margin: auto;
+}
+
+#window{
+    margin-top: 20px;
+    border: 1px solid black;
+    background: darkgrey;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    box-shadow: 5px 5px 5px darkred;
+    display: none;
+}
+
+#endGame{
+    font-size: 50px;
+    color: #FBAF0C;
+    margin-bottom: 20px;
+}
+
+#scoreGame {
+    font-size: 35px;
+    background-color: white;
+    border-radius: 5px 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#replay{
+    background-color: royalblue;
+    color: white;
+    box-shadow: 5px 5px 5px darkslategrey;
+    border-radius: 20px 20px;
+    font-size: 40px;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 800px) {
+    #container{
+        width: 80%;
+    }
+    h1{
+        font-size: 60px;
+    }
+    h2{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .case{
+        width: 75px;
+        height: 125px;
+        background-size: 70px 120px;
+    }
+    #endGame{
+        font-size: 30px;
+    }
+
+    #scoreGame {
+        font-size: 20px;
+    }
+}

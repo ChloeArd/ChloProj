@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    font-family: 'Changa', sans-serif;
+    background-color: #ED3535;
+}
+
+h1{
+    font-size: 50px;
+}
+
+#container{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#avengers{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#play{
+    background-color: royalblue;
+    font-size: 30px;
+    border: 1px solid darkslategrey;
+    border-radius: 20px 20px;
+    box-shadow: 5px 5px 5px darkred;
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 800px) {
+    #container{
+        width: 100%;
+    }
+    h1{
+        font-size: 60px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    #avengers{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    #avengers{
+        margin-top: 50px;
+        margin-bottom: 120px;
+    }
+
+}
